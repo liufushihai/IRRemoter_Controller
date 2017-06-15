@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.MainAty">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/tv_temperature"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:text="@string/Temperature_default"
+                android:textSize="100dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />               //温度数值显示
+
+            <TextView
+                android:id="@+id/tv_temperature_sign"
+                android:text="@string/Temperature_sign"
+                android:textColor="#808080"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_width="45dp"
+                android:layout_height="80dp" />              //温度符号显示
+
+        </LinearLayout>    //温度信息显示
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="150dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="80dp"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:textColor="#808080"
+                    android:id="@+id/tv_wind_scan"
+                    android:text="@string/null_str"
+                    android:textSize="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp" />      //风向
+
+                <TextView
+                    android:textColor="#808080"
+                    android:id="@+id/tv_speed_wind"
+                    android:text="@string/State_auto_wind"
+                    android:textSize="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp" />      //风速
+
+                <TextView
+                    android:textColor="#808080"
+                    android:id="@+id/tv_mode"
+                    android:text="@string/Mode_refrigeration"
+                    android:textSize="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp" />      //模式
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>    //信息面板显示
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/img_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+    </LinearLayout>    //分割线
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />           //界面间隔
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgBtn_add"
+                android:background="@drawable/imgbtn_add_sl"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />                //温度+
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:text="@string/Temperature"
+                android:textAlignment="center"
+                android:textSize="33dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp" />
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="20dp"/>
+
+            <ImageButton
+                android:id="@+id/imgBtn_reduce"
+                android:background="@drawable/imgbtn_reduce_sl"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />                //温度-
+
+
+
+        </LinearLayout>    //调温
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:text="@string/Switch"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+
+                <ImageButton
+                    android:id="@+id/imgBtn_switch"
+                    android:background="@drawable/imgbtn_swtich_sl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>       //开关
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:text="@string/Wind_scan"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+
+
+                <ImageButton
+                    android:id="@+id/imgBtn_wind_scan"
+                    android:background="@drawable/imgbtn_swtich_sl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>       //扫风
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:text="@string/Speed_wind"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtn_speed_wind"
+                    android:background="@drawable/imgbtn_next_sl"
+                    android:layout_width="69dp"
+                    android:layout_height="51dp" />
+
+            </LinearLayout>       //风速
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:text="@string/Mode"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtn_mode"
+                    android:background="@drawable/imgbtn_next_sl"
+                    android:layout_width="69dp"
+                    android:layout_height="51dp" />
+
+            </LinearLayout>       //模式
+
+        </LinearLayout>    //开关-扫风-风速-模式
+
+    </LinearLayout>    //操作按钮
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>    //隐藏的listView
+
+
+
+
+</LinearLayout>

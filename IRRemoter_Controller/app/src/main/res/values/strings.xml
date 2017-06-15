@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">IRRemoter</string>
+    <string name="Temperature">温度</string>
+    <string name="Switch">开关</string>
+    <string name="Wind_scan">扫风</string>
+    <string name="No_Wind_scan">不扫风</string>
+    <string name="Speed_wind">风速</string> 
+    <string name="State_auto_wind">自动</string>
+    <string name="State_one_wind">▄</string>
+    <string name="State_two_wind">▄▆</string>
+    <string name="State_third_wind">▄▆█</string>
+    <string name="Mode">模式</string>
+    <string name="Mode_auto">自动</string>
+    <string name="Mode_heating">制热</string>
+    <string name="Mode_refrigeration">制冷</string>
+    <string name="Mode_humidification">加湿</string>
+    <string name="Mode_blowing">送风</string>
+    <string name="Temperature_default">26</string>
+    <string name="Temperature_sign">℃</string>
+    <string name="null_str"></string>
+    <string name="Command_on">1</string>
+    <string name="Command_add">2</string>
+    <string name="Command_reduce">3</string>
+    <string name="Command_wind_scan">4</string>
+    <string name="Command_wind_speed">5</string>
+    <string name="Command_mode">6</string>
+
+    <string name="disconnected_hint">连接失败</string>
+    <string name="connected_hint">连接成功</string>
+    <string name="connecting_hint">连接中...</string>
+    <string name="write_text_send_err">发送字串失败</string>
+    <string name="connected_dev_successful">连接设备成功</string>
+    <string name="connected_dev_failed">设备连接失败</string>
+
+</resources>
