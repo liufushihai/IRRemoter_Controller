@@ -6,7 +6,7 @@
 该空调遥控器是通过Android手机BLE模块发送相应空调格式与频率的红外编码数据给FireBLE单片机，再由FireBLE单片机上的红外发射模块将接收数据发送给空调的红外接收模块，从而来实现对空调的控制。
 
 架构图如下: 
-![architecture](https://github.com/liufushihai/IRRemoter_Controller/blob/master/IRRemoter_Controller_architecture/architecture.png)
+![architecture](https://github.com/liufushihai/IRRemoter_Controller/blob/master/IRRemoter_Controller_architecture/architecture-zh.png)
 
 功能
 ---------------------
