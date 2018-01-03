@@ -3,8 +3,8 @@
 Introduction
 --------------------
 
-This is Android Controller app for Air conditioning.  [中文版](https://github.com/liufushihai/IRRemoter_Controller/blob/master/README-zh.md)
-Architecture as follows : 
+This is Android Controller app for Air conditioning. [中文版](https://github.com/liufushihai/IRRemoter_Controller/blob/master/README-zh.md)
+<br>Architecture as follows :<br> 
 ![architecture](https://github.com/liufushihai/IRRemoter_Controller/blob/master/IRRemoter_Controller_architecture/architecture.png)
 
 
